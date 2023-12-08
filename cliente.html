@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title> Le perle noire </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-cliente.css">
+
+    </head>
+
+    <body>
+        
+        <!--Menu-->
+        <header class="header-main"> 
+
+            <div class="div-logo">
+                <a href="index.html"> <img src="logo-test.jpeg" class="logo"> </a>
+                <nav class="div-nav">
+                    <ul>
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="reserva.html"> Reservas de mesa </a> </li>
+                        <li> <a href="cardapio.html"> Cardápio </a> </li>
+                        <li> <a href="pedidos.php"> Pedidos </a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="div-icones">
+                <a href="login.html"> <div class="cliente-icone"></div> </a>
+                <a href="funcionario.html"> <div class="funcionario-icone"></div> </a> 
+            </div>
+
+        </header>
+        <!--Menu-->
+
+        <div class="div1">
+
+            <form action="inserir.php" method="get">
+
+                <p class="nome"> Nome: </p> </br>
+                <input type="text" name="nome" class="caixanome"> </br>
+                <p class="cpf"> CPF: </p> </br>
+                <input type="number" name="cpf" class="caixacpf"> </br>
+                <p class="email"> E-mail: </p> </br>
+                <input type="text" name="email" class="caixaemail"> </br>
+                <p class="senha"> Senha: </p> </br>
+                <input type="password" name="senha" class="caixasenha"> </br>
+                <button type="submit" class="btnpedidos">Pedidos anteriores</button>
+                <button type="submit" class="btneditar">Editar</button>
+                <button type="submit" class="btnexcluir">Excluir</button>
+                <button type="submit" class="btnsalvar">Salvar</button>
+
+            </form> 
+
+        </div>
+       
+
+    </body>
+
+</html>

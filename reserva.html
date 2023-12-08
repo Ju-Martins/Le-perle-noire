@@ -1,0 +1,114 @@
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title> Le Perle Noire </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-reserva.css">
+
+        <script>
+
+            function mesaSelecionada(botao) {
+                
+                // Remove a classe "clicked" de todas as mesas
+                var todasMesas = document.querySelectorAll('.div2 button');
+                todasMesas.forEach(function (mesa) {
+                    mesa.classList.remove("clicked");
+                });
+
+                // Adiciona a classe "clicked" apenas à mesa clicada
+                botao.classList.toggle("clicked");
+
+                var mesa1 = document.getElementById("mesa01").value;
+                var mesa2 = document.getElementById("mesa02").value;
+                var mesa3 = document.getElementById("mesa03").value;
+                var mesa4 = document.getElementById("mesa04").value;
+                var mesa5 = document.getElementById("mesa05").value;
+                var mesa6 = document.getElementById("mesa06").value;
+                var mesa7 = document.getElementById("mesa07").value;
+                var mesa8 = document.getElementById("mesa08").value;
+                var mesa9 = document.getElementById("mesa09").value;
+                var mesa10 = document.getElementById("mesa10").value;
+                var mesa11 = document.getElementById("mesa11").value;
+                var mesa12 = document.getElementById("mesa12").value;
+                var mesa13 = document.getElementById("mesa13").value;
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <!--Menu-->
+        <header class="header-main"> 
+
+            <div class="div-logo">
+                <a href="index.html"> <img src="logo-test.jpeg" class="logo"> </a>
+                <nav class="div-nav">
+                    <ul>
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="reserva.html"> Reservas de mesa </a> </li>
+                        <li> <a href="cardapio.html"> Cardápio </a> </li>
+                        <li> <a href="pedidos.php"> Pedidos </a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="div-icones">
+                <a href="login.html"> <div class="cliente-icone"></div> </a>
+                <a href="funcionario.html"> <div class="funcionario-icone"></div> </a> 
+            </div>
+
+        </header>
+        <!--Menu-->
+
+        <!--Faça sua reserva-->
+        <div class="div1">
+
+            <form action="inserir.php" method="get">
+
+                <h1> Faça sua reserva </h1>
+                <p> Data: </p>
+                <input type="date" name="data" class="caixa"> </br>
+                <p> Hora: </p> </br>
+                <input type="time" name="horario" class="caixa"> </br>
+                <p> Quantidade de pessoas: </p> </br>
+                <input type="number" name="quantidade_pessoas" class="caixa"> </br>
+                <p> Número da mesa: </p> </br>
+                <input type="number" name="numero_mesa" class="caixa"> </br>
+                <p> Observações: </p> </br>
+                <input type="text" name="obs" class="caixa"> </br> 
+                </br>
+                <button type="submit" class="botao"> Reservar </button>
+
+            </form>
+
+        </div>
+        <!--Faça sua reserva-->
+
+        <!--Mapa das mesas-->
+        <div class="div2">
+
+            <button class="mesa1" onclick="mesaSelecionada(this)"> 01 </button>
+            <button class="mesa2" onclick="mesaSelecionada(this)"> 02 </button>
+            <button class="mesa3" onclick="mesaSelecionada(this)"> 03 </button>
+            <button class="mesa4" onclick="mesaSelecionada(this)"> 04 </button>
+            <button class="mesa5" onclick="mesaSelecionada(this)"> 05 </button>
+            <button class="mesa6" onclick="mesaSelecionada(this)"> 06 </button>
+            <button class="mesa7" onclick="mesaSelecionada(this)"> 07 </button>
+            <button class="mesa8" onclick="mesaSelecionada(this)"> 08 </button>
+            <button class="mesa9" onclick="mesaSelecionada(this)"> 09 </button>
+            <button class="mesa10" onclick="mesaSelecionada(this)"> 10 </button>
+            <button class="mesa11" onclick="mesaSelecionada(this)"> 11 </button>
+            <button class="mesa12" onclick="mesaSelecionada(this)"> 12 </button>
+            <button class="mesa13" onclick="mesaSelecionada(this)"> 13 </button>
+
+        </div>
+        <!--Mapa das mesas-->
+
+
+    </body>
+
+</html>
